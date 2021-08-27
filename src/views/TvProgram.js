@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import CardTv from './cardTv';
+import CardTv from '../components/cardTv';
 
 const TvProgram = () => {
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import CardMore from './cardMore';
+import CardMore from '../components/cardMore';
 
 const More = () => {
 
@@ -8,7 +8,7 @@ const More = () => {
     
 
     useEffect(() => {
-        fetch('https://api.themoviedb.org/3/trending/all/day?api_key=68b1c5e0c1c1ecb622b735be7a577ddf')
+        fetch(`https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.API_KEY_TMDB}`)
     .then(response => response.json())
     .then((data) => {setMore(data.results);
     });

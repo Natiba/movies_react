@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import CardPeople from './cardPeople';
+import CardPeople from '../components/cardPeople';
 
 const People = () => {
 

@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from "./components/nav";
-import Home from "./components/Home";
-import Movies from "./components/Movies";
-import TvProgram from "./components/TvProgram";
-import People from "./components/People";
-import More from "./components/More";
+import Home from "./views/Home";
+import Movies from "./views/Movies";
+import MovieDetails from "./components/MovieDetails";
+import TvProgram from "./views/TvProgram";
+import People from "./views/People";
+import More from "./views/More";
 import NotFound from "./components/NotFound";
 
 
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route exact path="/movies">
         <Movies />
+        </Route>
+        <Route exact path="/movies/:id">
+        <MovieDetails />
         </Route>
         <Route exact path="/programas-tv">
           <TvProgram />
