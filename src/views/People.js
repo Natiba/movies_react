@@ -8,7 +8,7 @@ const People = () => {
     
 
     useEffect(() => {
-        fetch('https://api.themoviedb.org/3/person/popular?api_key=68b1c5e0c1c1ecb622b735be7a577ddf')
+        fetch(`https://api.themoviedb.org/3/person/popular?api_key=${process.env.REACT_APP_API_KEY_TMDB}`)
     .then(response => response.json())
     .then((data) => {setPeople(data.results);
     });
