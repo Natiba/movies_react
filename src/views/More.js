@@ -8,7 +8,7 @@ const More = () => {
     
 
     useEffect(() => {
-        fetch(`https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.API_KEY_TMDB}`)
+        fetch(`https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_API_KEY_TMDB}`)
     .then(response => response.json())
     .then((data) => {setMore(data.results);
     });

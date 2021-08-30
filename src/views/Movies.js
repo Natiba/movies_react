@@ -8,7 +8,7 @@ const Movies = () => {
 
   useEffect(() => {
     fetch(
-      `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.API_KEY_TMDB}`
+      `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_API_KEY_TMDB}`
     )
       .then((response) => response.json())
       .then((data) => {
