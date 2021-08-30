@@ -7,7 +7,7 @@ const {id} = useParams();
 const[movieDetails, setMovieDetails] = useState({});
 
 useEffect(() => {
-    fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.API_KEY_TMDB}`)
+    fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_API_KEY_TMDB}`)
 .then((response) => response.json())
 .then((data)=>setMovieDetails(data));
 }, ) //tuve que sacar el array vacio, me tiraba que no estaba en uso?
