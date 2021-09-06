@@ -1,4 +1,5 @@
 const CaroHome = (props) => {
+  const{home} = props;
     console.log(props)
     return ( 
         // <div className="cards-container">
@@ -13,26 +14,20 @@ const CaroHome = (props) => {
   </ol>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src={'https://image.tmdb.org/t/p/w500'+props.image} className="d-block w-100 image" alt="..."/>
+      {/* <img src={image} className="d-block w-100 image" alt="..."/> */}
       <div className="carousel-caption d-none d-md-block">
-        <h5>{props.title}</h5>
+        <h5>{props.title}</h5> 
         <h5>{props.name}</h5>
       </div>
     </div>
-    {/* <div className="carousel-item">
-      <img src="..." className="d-block w-100" alt="..."/>
+    {home.map((item=> <div className="carousel-item">
+      <img src={'https://image.tmdb.org/t/p/w500'+item.backdrop_path} className="d-block w-100" alt="..."/>
       <div className="carousel-caption d-none d-md-block">
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
       </div>
-    </div> */}
-    {/* <div className="carousel-item">
-      <img src="..." className="d-block w-100" alt="..."/>
-      <div className="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div> */}
+    </div>))}
+    
   </div>
   <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
     <span className="carousel-control-prev-icon" aria-hidden="true"></span>

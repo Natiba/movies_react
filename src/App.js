@@ -6,6 +6,7 @@ import MovieDetails from "./components/MovieDetails";
 import TvProgram from "./views/TvProgram";
 import People from "./views/People";
 import More from "./views/More";
+import Add from "./components/Add";
 import NotFound from "./components/NotFound";
 
 
@@ -33,6 +34,9 @@ function App() {
         </Route>
         <Route exact path="/more">
           <More />
+        </Route>
+        <Route exact path="/search">
+          <Add />
         </Route>
         <Route exact path="*">
           <NotFound />

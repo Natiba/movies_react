@@ -19,7 +19,9 @@ const Home = () => {
     return ( 
         <>
         <div className="all-container">
-        <ul>{home.map(item => <CaroHome image={item.poster_path} title={item.original_title} name={item.name}/>)}</ul>
+        <CaroHome 
+        image={'https://image.tmdb.org/t/p/w500' + home.poster_path}
+        />
         </div>
         </>
      );

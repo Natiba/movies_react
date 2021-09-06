@@ -50,7 +50,10 @@ const Nav = () => {
               </Link>
             </li>
           </ul>
+          <Link to="/search" className="nav-link text-white bg-dark"></Link>
+                Add
         </div>
+        
       </nav>
       {/* </div>  */}
     </>
