@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from "react-router-dom";
 
 const Nav = () => {
@@ -15,8 +16,8 @@ const Nav = () => {
           alt="Movies Logo"
         />
 
-        <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav space2 ">
+        <div className="collapse navbar-collapse" id="navbarNavDropdown" >
+          <ul className="navbar-nav space2 " style={{ margin: "auto" }}>
             <li className="nav-item active">
               <Link
                 to="/movies"
@@ -28,7 +29,7 @@ const Nav = () => {
             </li>
             <li className="nav-item active">
               <Link
-                to="/programas-tv"
+                to="/tv-program-"
                 className="nav-link text-white bg-dark"
                 href="2"
               >
@@ -49,9 +50,21 @@ const Nav = () => {
                 More
               </Link>
             </li>
+
           </ul>
-          <Link to="/search" className="nav-link text-white bg-dark"></Link>
-                Add
+<div>
+          <ul className="row">
+            <li>
+                <Link to= "/favourites">❤️</Link>
+            </li>
+            <li>
+                <Link to= "/search">+ Add</Link>
+            </li>
+        </ul>
+        </div>
+
+          {/* <Link to="/search" className="nav-link text-white bg-dark"></Link>
+                Add */}
         </div>
         
       </nav>

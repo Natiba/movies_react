@@ -16,8 +16,16 @@ const TvProgram = () => {
 
     return ( 
     <>
+    <h1 style={{textAlign: 'center', marginTop: "4rem", color: "white"}}>Series</h1>
     <div className="all-container">
-        <ul>{tv.map(item => <CardTv image={item.poster_path} title={item.name} country={item.origin_country}/>)}</ul>
+        <ul>{tv.map(item => 
+        <CardTv key = {item.id}
+        image={item.poster_path} 
+        title={item.name} 
+        country={item.origin_country}
+        id={item.id}
+        />)}
+        </ul>
         </div>
     </>
      );
@@ -25,4 +33,3 @@ const TvProgram = () => {
  
 export default TvProgram;
 
-// https://api.themoviedb.org/3/tv/popular?api_key=68b1c5e0c1c1ecb622b735be7a577ddf  //para tv

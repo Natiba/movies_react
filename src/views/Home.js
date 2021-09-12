@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import CaroHome from '../components/caroHome';
+// import CaroHome from '../components/caroHome';
+import CarouselCard from '../components/CarouselCard';
+import Popular from '../components/Popular';
+import Trends from '../components/Trends';
 // import Carousel from 'react-bootstrap/Carousel'
 
 const Home = () => {
@@ -18,11 +21,19 @@ const Home = () => {
 
     return ( 
         <>
-        <div className="all-container">
-        <CaroHome 
-        image={'https://image.tmdb.org/t/p/w500' + home.poster_path}
-        />
+        {/* <div className="all-container"> */}
+        {/* <CaroHome home = {home} /> */}
+        <div>
+        <CarouselCard home = {home} />
         </div>
+        <div>
+        <Popular /> 
+        </div>
+        <div>
+        <Trends />
+        </div>
+
+        {/* </div> */}
         </>
      );
 }

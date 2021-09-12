@@ -16,8 +16,18 @@ const People = () => {
 
     return ( 
     <>
+    <h1 style={{textAlign: 'center', marginTop: "4rem", color: "white"}}>People</h1>
     <div className="all-container">
-        <ul>{people.map(item => <CardPeople image={item.profile_path} title={item.name} country={item.origin_country}/>)}</ul>
+        <ul>{people.map(item => 
+        <CardPeople 
+        image={item.profile_path} 
+        name={item.name} 
+        homepage={item.homepage}
+        id={item.id}
+        birthday={item.birthday}
+        known={item.also_known_as}
+        biography={item.biography}
+        />)}</ul>
         </div>
     </>
      );
