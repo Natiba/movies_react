@@ -17,10 +17,21 @@ const More = () => {
     return ( 
     <>
     <h1 style={{textAlign: 'center', marginTop: "4rem", color: "white"}}>Trending</h1>
-    <div className="all-container">
-        <ul>{more.map(item => <CardMore image={item.poster_path} title={item.original_title} name={item.name} type={item.media_type}/>)}</ul>
+    <div className="row">
+        {more.map(item => 
+        <div className="col-lg-3 col-auto">
+        <CardMore
+         image={item.poster_path} 
+         title={item.original_title} 
+         name={item.name} 
+         type={item.media_type}/>
+         </div>
+         )}
+        
         </div>
+        
     </>
+    
      );
 }
  

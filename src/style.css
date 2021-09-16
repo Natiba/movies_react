@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: rgba(52, 52, 52);
-}
 
 /* nav */
 
@@ -27,6 +24,19 @@ body {
     margin-left: 10rem;   
 }
 
+.btn-outline-success {
+    color: rgb(49, 167, 148) !important;
+    border: 2px solid rgb(49, 167, 148) !important;
+}
+
+.btn-outline-success:hover {
+    color: rgb(16, 75, 65) !important;
+    border: 2px solid rgb(16, 75, 65) !important;
+    background: rgb(124, 190, 179) !important;
+}
+
+/* xxxx movies xxxx */
+
 .all-container {
 display: flex;
 flex-direction: row;
@@ -41,20 +51,56 @@ float: left;
 margin: 0.2rem 1rem;
 }
 
+.moviesLine {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+.pe {
+padding-top: .8rem;
+padding-right: .8rem;
+}
+
 /* xxxx home xxxx */
 
-/* Most Popular */
+/* Most Popular // Trends */
 
-.popular, .trends {
-    width: 100%;
+.popular {
+    /* width: 100%;
     display: flex;
     flex-direction: row; 
     flex-wrap: wrap;
     overflow: scroll;
     margin: 2rem auto;
-    width: 100%;
+    width: 100%; */
     border: 2px solid rgb(49, 167, 148);
 }
+
+.all-cont { 
+    width: 100%;
+    margin: 2rem auto;
+} 
+
+.trends {
+    /* width: 20px; */
+    height: 24rem;
+    display: flex;
+    overflow: scroll;
+    list-style: none;
+    /* margin: .1rem;
+    padding: .6rem; */
+}
+
+
+.trends2 {
+    width: 100%;
+    padding: .5rem;
+    margin: .5rem;
+    border: 2px solid rgb(250, 248, 250);
+    border-radius: 10px;
+} 
 
 /* carousel */
 
@@ -66,7 +112,7 @@ image {
 
 .cards {
     width: 100%;
-    height: 28rem;
+    height: 34rem;
     border-radius: 10px;
 }
 
@@ -98,5 +144,52 @@ image {
     border-radius: 10px;
 }
 
+/* @media (min-width: 400px) {
+    :root {
+        --results-columns:1;
+    }
+}
 
+@media (min-width: 600px) {
+    :root {
+        --results-columns:2;
+    }
+}
 
+@media (min-width: 800px) {
+    :root {
+        --results-columns:4;
+    }
+} */
+
+/* xxxx search xxxx */
+
+.search-content {
+align-items: center;
+margin: 1rem auto;
+width: 100%;
+}
+
+.input-wrapper input {
+    width: 30%;
+    padding: .8rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.results {
+    
+    display: flex;
+    overflow: scroll;
+    list-style: none;
+    margin: 1.6em;
+    padding: .6rem;
+}
+
+.results li {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid rgb(248, 250, 250);
+    border-radius: 10px;
+}

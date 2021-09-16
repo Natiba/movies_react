@@ -28,7 +28,7 @@ console.log(peopleDetails)
     <p className="card-text">{peopleDetails.birthday}</p>
   </div>
   <ul className="list-group list-group-flush">
-    <li className="list-group-item">{peopleDetails.known}</li>
+    {/* <li className="list-group-item">{peopleDetails.also_known_as}</li>  me lo tira en otro idioma */}
     <li className="list-group-item"><b>Biography:</b> {peopleDetails.biography}</li>
     <li className="list-group-item">{peopleDetails.homepage}</li>
   </ul>

@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // import Nav from "./components/nav";
 import NavBar from "./components/NavBar";
-import Search from "./components/Search";
-// import Favourite from "./components/Favourite";
 import Home from "./views/Home";
 import Movies from "./views/Movies";
 import MovieDetails from "./components/MovieDetails";
@@ -13,7 +11,8 @@ import SeriesDetails from "./components/SeriesDetails";
 import People from "./views/People";
 import PeopleDetails from "./components/PeopleDetails";
 import More from "./views/More";
-
+import Search from "./components/Search";
+import Favorite from "./components/Favorite";
 import NotFound from "./components/NotFound";
 
 // import GlobalProvider from "./context/GlobalState";
@@ -26,12 +25,7 @@ function App() {
       <NavBar />
 
       <Switch>
-      <Route exact path="/search">
-          <Search />
-        </Route>
-        {/* <Route exact path="/favourites"
-        <Favourite />
-        </Route> */}
+      
         <Route exact path="/">
           <Home />
         </Route>
@@ -55,6 +49,12 @@ function App() {
         </Route>
         <Route exact path="/more">
           <More />
+        </Route>
+        <Route exact path="/search">
+          <Search />
+        </Route>
+        <Route exact path="/favorites">
+         <Favorite />
         </Route>
         <Route exact path="*">
           <NotFound />

@@ -26,7 +26,7 @@ console.log(serieDetails)
 <div className="card" style={{width: "20rem", margin: "4rem auto"}}>
   <img src={'https://image.tmdb.org/t/p/w500' + serieDetails.backdrop_path} className="imgcard-img-top" alt="..." />
   <div className="card-body">
-    <h5 className="card-title">{serieDetails.title}</h5>
+    <h5 className="card-title">{serieDetails.name}</h5>
     <p className="card-text">{serieDetails.overview}</p>
   </div>
   <ul className="list-group list-group-flush">
