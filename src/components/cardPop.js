@@ -5,7 +5,7 @@ const  cardPop= (props) => {
     console.log(props)
     return ( 
         <>
-        <div className="cards-container" style={{width: "14rem", height: "6rem", borderRadius: "50px"}}>
+        <div className="cards-container" style={{width: "14rem", borderRadius: "50px"}}>
         <div className="card cards shadow p-3 mb-5 bg-white rounded">
   <img src={'https://image.tmdb.org/t/p/w200'+props.image} className="card-img-top rounded" alt="..."/>
   

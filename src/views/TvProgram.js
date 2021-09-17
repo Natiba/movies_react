@@ -16,7 +16,7 @@ const TvProgram = () => {
 
     return ( 
     <>
-    <h1 style={{textAlign: 'center', marginTop: "4rem", color: "white"}}>Series</h1>
+    <h1 style={{textAlign: 'center', margin: "4rem", color: "white"}}>Series</h1>
     <div className="all-container">
         <ul>{tv.map(item => 
         <CardTv key = {item.id}

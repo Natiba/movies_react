@@ -16,7 +16,7 @@ const More = () => {
 
     return ( 
     <>
-    <h1 style={{textAlign: 'center', marginTop: "4rem", color: "white"}}>Trending</h1>
+    <h1 style={{textAlign: 'center', margin: "4rem", color: "white"}}>Trending</h1>
     <div className="row">
         {more.map(item => 
         <div className="col-lg-3 col-auto">

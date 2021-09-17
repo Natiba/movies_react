@@ -16,10 +16,10 @@ const People = () => {
 
     return ( 
     <>
-    <h1 style={{textAlign: 'center', marginTop: "4rem", color: "white"}}>People</h1>
+    <h1 style={{textAlign: 'center', margin: "4rem", color: "white"}}>People</h1>
     {/* <div className="all-container"> */}
-    <div className="row">
-        {/* <ul> */}
+    <div className="row col-auto">
+        
             {people.map(item => 
         <div class="col-lg-3 col-auto">
         <CardPeople 
@@ -33,7 +33,7 @@ const People = () => {
         />
         </div>
         )}
-        {/* </ul> */}
+        
         </div>
         {/* </div> */}
     </>

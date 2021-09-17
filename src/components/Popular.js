@@ -15,10 +15,11 @@ const Popular = () => {
     return ( 
         <>
          <h1 style={{textAlign: 'center', marginTop: "4rem", color: "white"}}>Most Popular</h1>
+         <div class="row">
          <div className="all-cont">
          <ul className="trends">
             {pop.map(item => 
-            <div className="col-lg-3 col-auto">
+            <div className="col-lg-3 p-0">
             <CardPop 
             image={item.poster_path} 
             title={item.original_title}  
@@ -28,7 +29,7 @@ const Popular = () => {
             )}
             </ul>
         </div>
-       
+       </div>
         {/* </div> */}
         </>
      );

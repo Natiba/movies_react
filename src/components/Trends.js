@@ -18,9 +18,10 @@ const Trends = () => {
          {/* <div> */}
          <div class="row">
          <div className="all-cont">
-         <ul className="trends">
+         <div
+         className="trends">
             {trends.map(item => 
-            <div className="col-lg-8">
+            <div className="col-lg-3 p-0">
             <CardMore 
             image={item.poster_path} 
             title={item.original_title} 
@@ -29,7 +30,7 @@ const Trends = () => {
             />
             </div>
             )}
-            </ul>
+            </div>
         </div>
         </div>
         {/* </div> */}
