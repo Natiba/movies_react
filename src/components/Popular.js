@@ -14,7 +14,7 @@ const Popular = () => {
 
     return ( 
         <>
-         <h1 style={{textAlign: 'center', marginTop: "4rem", color: "white"}}>Most Popular</h1>
+         <h1 style={{textAlign: 'center', margin: "3rem", color: "white"}}>Most Popular</h1>
          <div class="row">
          <div className="all-cont">
          <ul className="trends">

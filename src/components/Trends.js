@@ -14,7 +14,7 @@ const Trends = () => {
 
     return ( 
         <>
-         <h1 style={{textAlign: 'center', marginTop: "4rem", color: "white"}}>Trends</h1>
+         <h1 style={{textAlign: 'center', margin: "3rem", color: "white"}}>Trends</h1>
          {/* <div> */}
          <div class="row">
          <div className="all-cont">
